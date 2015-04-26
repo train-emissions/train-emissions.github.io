@@ -186,3 +186,7 @@ p.copyright {
     display: inline-block;
     color: #999;
 }
+
+.table td {
+   text-align: center;   
+}

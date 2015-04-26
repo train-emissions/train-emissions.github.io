@@ -11,6 +11,8 @@
 
     <title>Analytical method</title>
 
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -61,13 +63,19 @@
                             <a href="lit-review.html">Literature Review</a>
                     </li>
                     <li>
-                        <a href="develop.html">Development</a>
+                        <a href="develop.html">Developing the Emission Inventory</a>
                     </li>
                     <li class="active">
-                        <a href="analytics.html" style="color:rgb(40, 40, 115)">Analytical Method</a>
+                        <a href="analytics.html" style="color:rgb(40, 40, 45)">Analytical Method</a>
                     </li>
                     <li>
                         <a href="case.html">Case Study</a>
+                    </li>
+                    <li>
+                        <a href="discussion.html">Discussion</a>
+                    </li>
+                    <li>
+                        <a href="recommendation.html">Recommendation</a>
                     </li>
                 </ul>
             </div>
@@ -102,7 +110,7 @@
                     </p>
                     <p class="lead">
                         Equation 9.1: resistance calculation equatin for rollingstock [36]</br>
-                        <b>Ft = [k * W * a] + [Fr]  </b></br>
+                        $$F_t = k * W * a + F_r$$
                         Ft- tractive force, k- constant, W- weight of the train, a- acceleration and Fr- train resistance force
                     </p>
                     <p class="lead">
@@ -131,7 +139,7 @@
                         <div class="col-md-6 col-md-offset-3">
                             <div class="thumbnail with-caption">
                                 <img style="" class="img-responsive" src="img/F11.1.png" alt="">
-                                <p style="padding-left: 90px">Figure 11.1: Flow chart of analytical method</p>
+                                <p style="padding-left: 90px">Figure 4.1: Flow chart of analytical method</p>
                             </div>
                         </div>
                     </div>
@@ -169,7 +177,7 @@
                     <h4>Calculation of Resistance</h4>
                     <h4>Rolling Resistance</h4>
                     <p class="lead"> 
-                        Equation 11.1 Rolling Resistance</br>
+                        Equation 4.1 Rolling Resistance</br>
                         $$F_R = f_R * m_{tog} * g$$
                         Where:
                         <div class="lead" style="padding-left:100px; padding-top:0px; margin-top:0px">
@@ -184,7 +192,7 @@
                     </p>
                     <p class="lead"> 
                         Calculation of rolling resistance coefficient is as follows. Rolling resistance coefficient is generally calculated by as follows. The rolling resistance coefficient is a function of the speed of the train. It is as follows</br>
-                        Equation 11.2 : rolling resistance coefficient</br>
+                        Equation 4.2 : rolling resistance coefficient</br>
                         
                         $$f_R = C_0 + C_1*(V/V_0)+C_2(V/V_0)^2$$
                         
@@ -201,7 +209,7 @@
                                    $$C_1 = 0.025%$$
                                    $$C_2 = 0.050%$$
                         Calculating $C_0$
-                        Equation 11.3 : constant $C_0$. 
+                        Equation 4.3 : constant $C_0$. 
                                 $$C_0 = \frac{f_{SL}m_L + f_{SW}m_W}{m_{TOTAL}}$$
                         
                         Where: 
@@ -218,7 +226,7 @@
                         The Starting value for a locomotive’s rolling resistance is depending on number of axles on the locomotive. This value is as follows.</br>
                         For four axle locomotive: 0.25% to 0.35%</br>
                         For six axle locomotive: 0.35% to 0.45%</br>
-                        Equation 11.4: fSW Calculation equation
+                        Equation 4.4: fSW Calculation equation
                                 $$f_{SW} = C_{SW} + \frac{F_A * n_{axle}}{m_{TOTAL}*g} $$
 
                         where :</br>
@@ -237,7 +245,7 @@
                         <div class="col-md-6 col-md-offset-3">
                             <div class="thumbnail with-caption">
                                 <img style="" class="img-responsive" src="img/F11.2.png" alt="">
-                                <p style="padding-left: 120px">Figure 11.2: Projection of weight</p>
+                                <p style="padding-left: 170px">Figure 4.2: Projection of weight</p>
                             </div>
                         </div>
                     </div>
@@ -268,7 +276,7 @@
                         <div class="col-md-6 col-md-offset-3">
                             <div class="thumbnail with-caption">
                                 <img style="" class="img-responsive" src="img/F11.3.png" alt="">
-                                <p style="padding-left: 120px">Figure 11.3: Projection of air resistance</p>
+                                <p style="padding-left: 170px">Figure 4.3: Projection of air resistance</p>
                             </div>
                         </div>
                     </div>
@@ -285,7 +293,7 @@
                     </p>
                     <p class="lead">
                         Air Resistance is a function of the aero dynamic shape of the train, frontal area and speed of the train. Aero resistance is higher when there are obstacles around the train. If there are gaps between the cars the air resistance increases. This is due to the vortexes in between the carriages. In the freight trains aero dynamic resistance plays a major role due to the variation of wagons. The passenger trains are homogeneous. Because of that the aero dynamic drag of passenger trains are significantly lower than freight trains. </br>
-                        Equation 11.5 : aero dynamic resistance equation</br>
+                        Equation 4.5 : aero dynamic resistance equation</br>
 
                         $$ F_A = 1/2 * p * C_L * A_{NORM} * V^2$$
 
@@ -297,7 +305,7 @@
                         $C_L$ is the drag coefficient (dimensionless)</br>
                     </p>
                     <p class="lead">
-                    Equation 11.6: CL calculation equation
+                    Equation 4.6: CL calculation equation
                         $$C_{L,TOTAL} = C_{L,LOCOMOTIVE} + \sum{C_{L,WAGON}} $$
                     Where :</br>
                     $C_{L,TOTAL}$ is the air resistance coefficient for the entire train.</br>
@@ -318,8 +326,8 @@
                         There is another reason for the curve resistance. When a vehicle takes a curve the wheels are rotating at different angular velocities. Rear wheel drive land vehicles overcome this by using a differential gear drive. This scenario is applying to the trains as well. Though the curvature is much lower than in the case of land vehicles. In the Railway the curve is taken using the profile of the wheel and the rail and the placement of the rail. This makes additional friction and additional slip of the rail and the wheel. So there is a resistance force when taking a curve additional to the rolling resistance. 
                     </p>
                     <p class="lead"> 
-                        Equation 11.7 : curve resistance equation
-                        $$F_C = \frac{6116}{R} $$
+                        Equation 4.7 : curve resistance equation
+                        $$F_C = \frac{646}{R} $$
                         Where </br>
                         Fc is the curve resistance in N per ton of wagon mass</br>
                         R is the radius of the curve</br>
@@ -336,13 +344,11 @@
         <div class="container">
 
             <div class="row">
-                <!-- <div class="col-lg-5 col-sm-6"> -->
-                    <!-- <hr class="section-heading-spacer"> -->
                     <div class="clearfix"></div>
                     <h2>Alternative Approach</h2>
                     <p class="lead">
                         This Approach is using the resistance equation to obtain the total resistance.</br>
-                        Equation 11.8 : resistance equation
+                        Equation 4.8 : resistance equation
                         $$ R = A + B.V + C.V^2 $$
                     </p>
                     <p class="lead">
@@ -369,7 +375,7 @@
                         <div class="col-md-6 col-md-offset-3">
                             <div class="thumbnail with-caption">
                                 <img style="" class="img-responsive" src="img/F11.4.png" alt="">
-                                <p style="padding-left: 90px">Figure 11.4: Modelling of gradient along the track</p>
+                                <p style="padding-left: 120px">Figure 4.4: Modelling of gradient along the track</p>
                             </div>
                         </div>
                     </div>
@@ -392,11 +398,8 @@
                     <h3>Forces on the train</h3>
                     <p class="lead">
                         The forces on the train is as follows. The forces acting on the train if the train is on the grade and a curve is independent. So these two are calculated from the above equations. And the force needed to accelerate or decelerate is also calculated.
-                        Equation 11.9: Total force equation</br>
+                        Equation 4.9: Total force equation</br>
                         $$ F_{TOTAL} = F_{RESISTANCE} + F_{ACCELERATION} $$
-                    </p>
-                    <p class="lead">    
-                    Equation 11.10: Energy requirement 
                     </p>
                     <p class="lead">
                         Energy requirement is calculated station to station. Driving cycle starts when a train Starts at a certain station and stops at a certain station. And if there are stations in between starting and stopping station the energy is calculated according to the driving cycle.
@@ -472,6 +475,53 @@
                                 In this the energy is transmitted to the wheels through a gear box. The mechanical energy is transmitted directly to axles of the wheels. The efficiency of the mechanical transmission system is assumed to be 95% [artemis]
 
                     </p>
+
+                    <h3>Calculating Efficiency of the diesel engine</h3>
+                    <p class="lead">
+                        Calculating Efficiency of the diesel engines 
+
+                        $$ \eta_{Engine} = \frac{P_{Engine}}{m_f.H_U} $$
+                    </p>
+                    <p class="lead">
+                        Where :</br>
+                            $P_{Engine}$ is the power of the engine in kW</br>
+                            $m_f$  is the mass flow rate of the fuel</br>
+                            $H_U$ is the lower heating value of diesel kJ per kg</br>
+                    </p>
+                    <p class="lead">
+                        Equation 4.17: Mass flow rate of fuel
+                        
+                        $$ m_f = b_{Engine} . P_{Engine} $$
+                    </p>
+                    <p class="lead">
+                    Where : </br>
+                    $b_{Engine}$ is the brake specific fuel consumption in g/kWh</br>
+                    $P_{Engine}$ is the power of the engine in kWh</br>
+                    Brake specific fuel consumption is assumed as 224 g/kW</br>
+                    </p>
+                    <p class="lead">
+                    After obtaining the Diesel engine efficiencies the transmission efficiency has to be incorporated in order to obtain the fuel consumption from the Energy used.
+                    <p>
+
+                    <p class="lead">
+                    <b>Fuel consumption</b>
+                    </p>
+                    <p class="lead">
+                        After obtaining the Diesel engine efficiencies the transmission efficiency has to be incorporated in order to obtain the fuel consumption from the Energy used.
+                        Energy supplied is equals to the energy used with incorporating the efficiency.
+                        $$ E_s = \frac{E_U}{\eta} $$
+                        $E_S$  Energy supplied </br>
+                        $E_U$  Energy used </br>
+                        η   Efficiency of the system </br>
+
+                    </p>
+                        
+
+                    <h3>Emissions factors</h3>
+                    <p class="lead">
+                        The fuel consumption, which is calculated between two adjacent stations can be converted to the emission using the method that is used in the previous chapter.
+                    </p>
+
 
             </div>
 
